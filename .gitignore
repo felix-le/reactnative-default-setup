@@ -192,3 +192,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# yarn
+yarn.lock
