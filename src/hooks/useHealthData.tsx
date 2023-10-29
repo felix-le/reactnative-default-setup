@@ -13,7 +13,9 @@ interface HealthData {
   STEPS_GOAL: number;
 }
 
-const useHealthData = (): HealthData => {
+const useHealthData = (
+  date: Date
+): HealthData => {
   const { hasPermissions } = usePermission();
   const [steps, setSteps] = useState(0);
   const [distance, setDistance] = useState(0);
@@ -21,7 +23,7 @@ const useHealthData = (): HealthData => {
   useEffect(() => {
     if (!hasPermissions) return;
     const options: HealthInputOptions = {
-      date: new Date(2023, 9, 25).toISOString(),
+      date: date.toISOString(),
       includeManuallyAdded: true,
       // unit: HealthUnit.meter,
     };

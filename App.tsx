@@ -8,7 +8,9 @@ import useHealthData from './src/hooks/useHealthData';
 interface AppProps {}
 
 export default function App(props: AppProps) {
-  const { steps, distance } = useHealthData();
+  const { steps, distance } = useHealthData(
+    new Date(2023, 9, 25)
+  );
 
   return (
     <View className='flex-1 bg-neutral-700 justify-center p-5'>
