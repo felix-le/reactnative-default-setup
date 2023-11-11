@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "health-chatgpt",
-    "slug": "health-chatgpt",
+    "name": "change-me",
+    "slug": "change-me",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,17 +12,6 @@
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.health-chatgpt"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.anonymous.healthchatgpt"
-    },
     "web": {
       "favicon": "./assets/favicon.png"
     },
